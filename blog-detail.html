@@ -41,7 +41,7 @@
                             <img src="images/anneler-soruyor.svg" alt="">
                         </a>
                     </li>
-                    <li  class="active">
+                    <li class="active">
                         <a href="#">
                             <img src="images/anneler-blog.svg" alt="">
                         </a>
@@ -122,13 +122,31 @@
                     </div>
 
                     <div class="text">
-                        <p>Hamilelik, bir kadının hayatında ki en önemli ve en güzel dönemlerden bir tanesidir. Çeşitli ağrıları ve zorlukları çektiniz, doğum sürecini atlattınız ve artık anne oldunuz. Artık bebeğiniz kucağınızda ve onu sağlıklı bir şekilde beslemeniz gerekiyor. Özellikle ilk hamileliği olan bir anneyseniz emzirme konusunda kulak dolma bilgilere sahip olduğunuzu ve çeşitli korkularınızın olduğunu tahmin edebiliyoruz. Kucağınız da küçücük bebeğiniz ve siz emzirme ile ilgili hiçbir şey bilmiyorsunuz. </p>
-                        <p>Hamilelik, bir kadının hayatında ki en önemli ve en güzel dönemlerden bir tanesidir. Çeşitli ağrıları ve zorlukları çektiniz, doğum sürecini atlattınız ve artık anne oldunuz. Artık bebeğiniz kucağınızda ve onu sağlıklı bir şekilde beslemeniz gerekiyor. Özellikle ilk hamileliği olan bir anneyseniz emzirme konusunda kulak dolma bilgilere sahip olduğunuzu ve çeşitli korkularınızın olduğunu tahmin edebiliyoruz. Kucağınız da küçücük bebeğiniz ve siz emzirme ile ilgili hiçbir şey bilmiyorsunuz. </p>
+                        <p>Hamilelik, bir kadının hayatında ki en önemli ve en güzel dönemlerden bir tanesidir. Çeşitli ağrıları ve zorlukları çektiniz, doğum sürecini atlattınız ve artık anne
+                            oldunuz. Artık bebeğiniz kucağınızda ve onu sağlıklı bir şekilde beslemeniz gerekiyor. Özellikle ilk hamileliği olan bir anneyseniz emzirme konusunda kulak dolma bilgilere
+                            sahip olduğunuzu ve çeşitli korkularınızın olduğunu tahmin edebiliyoruz. Kucağınız da küçücük bebeğiniz ve siz emzirme ile ilgili hiçbir şey bilmiyorsunuz. </p>
+                        <p>Hamilelik, bir kadının hayatında ki en önemli ve en güzel dönemlerden bir tanesidir. Çeşitli ağrıları ve zorlukları çektiniz, doğum sürecini atlattınız ve artık anne
+                            oldunuz. Artık bebeğiniz kucağınızda ve onu sağlıklı bir şekilde beslemeniz gerekiyor. Özellikle ilk hamileliği olan bir anneyseniz emzirme konusunda kulak dolma bilgilere
+                            sahip olduğunuzu ve çeşitli korkularınızın olduğunu tahmin edebiliyoruz. Kucağınız da küçücük bebeğiniz ve siz emzirme ile ilgili hiçbir şey bilmiyorsunuz. </p>
                     </div>
 
+                    <style>
+                        .blog-content .actions {
+                            position: absolute;
+                            bottom: 1rem;
+                            right: 1rem;
+                        }
+
+                        .blog-content .actions .btn-comment {
+                            border: none;
+                        }
+                    </style>
                     <div class="actions">
-                        <button class="btn btn-actions"></button>
-                        <button class="btn btn-comment">
+                        <button class="btn btn-actions">
+
+                            49
+                        </button>
+                        <button class="btn btn-comment" data-bs-toggle="modal" data-bs-target="#commentModal">
                             <img src="images/icon/comment.svg" alt="Başlık"> 49
                         </button>
                     </div>
@@ -195,6 +213,95 @@
         </div>
     </div>
 </section>
+<!-- endregion -->
+
+<!-- region Modal -->
+<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Yorumlar</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- region Yorum Listesi -->
+                <div class="comment-list">
+                    <div class="comment-item">
+                        <div class="user">
+                            <img src="images/avatar-40.png" class="image" alt="Başlık">
+                            <div class="body">
+                                <h3 class="title">Merve <span>@merve</span></h3>
+                                <p>Çok faydalı bir içerik, teşekkürler</p>
+                                <ul class="comment-menu">
+                                    <li>145 Beğeni</li>
+                                    <li><a href="#">Yanıtla</a></li>
+                                    <li>5 sa</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-favorite"><i class="fa-regular fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="response-wrapper">
+                        <div class="comment-item">
+                            <div class="user">
+                                <img src="images/avatar-40.png" class="image" alt="Başlık">
+                                <div class="body">
+                                    <h3 class="title">Merve <span>@merve</span></h3>
+                                    <p>Çok faydalı bir içerik, teşekkürler</p>
+                                    <ul class="comment-menu">
+                                        <li>145 Beğeni</li>
+                                        <li><a href="#">Yanıtla</a></li>
+                                        <li>5 sa</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-favorite"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="user">
+                            <img src="images/avatar-40.png" class="image" alt="Başlık">
+                            <div class="body">
+                                <h3 class="title">Merve <span>@merve</span></h3>
+                                <p>Çok faydalı bir içerik, teşekkürler</p>
+                                <ul class="comment-menu">
+                                    <li>145 Beğeni</li>
+                                    <li><a href="#">Yanıtla</a></li>
+                                    <li>5 sa</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-favorite"><i class="fa-regular fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="response-wrapper">
+                        <div class="comment-item">
+                            <div class="user">
+                                <img src="images/avatar-40.png" class="image" alt="Başlık">
+                                <div class="body">
+                                    <h3 class="title">Merve <span>@merve</span></h3>
+                                    <p>Çok faydalı bir içerik, teşekkürler</p>
+                                    <ul class="comment-menu">
+                                        <li>145 Beğeni</li>
+                                        <li><a href="#">Yanıtla</a></li>
+                                        <li>5 sa</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-favorite"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- endregion -->
+            </div>
+            <div class="modal-footer">
+                <form action="#">
+                    <textarea class="form-control" placeholder="Yorumunuzu Yazınız" rows="5"></textarea>
+                    <button type="submit" class="btn btn-as">Yorum Yap</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- endregion -->
 
 <!-- region Footer -->

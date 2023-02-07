@@ -649,7 +649,8 @@ hr {
     margin-bottom: 1rem;
 }
 
-.filter-wrapper .brand-list {}
+.filter-wrapper .brand-list {
+}
 
 .filter-wrapper .brand-list li {
     margin-bottom: .5rem;
@@ -766,6 +767,7 @@ hr {
         align-items: flex-start;
     }
 }
+
 /* endregion */
 
 /* region Product Detail */
@@ -1302,7 +1304,8 @@ section.blog {
 }
 
 .blog-content {
-    padding: 1.5rem 3rem;
+    position: relative;
+    padding: 1.5rem 3rem 5rem 3rem;
     background-color: #ffffff;
     border-radius: 1.25rem;
 }
@@ -1351,6 +1354,7 @@ section.blog {
     color: #313248;
     margin-bottom: 0;
 }
+
 .blog-content .user .user-info h3 span {
     display: inline-block;
     color: #313248;
@@ -1373,6 +1377,7 @@ section.blog {
     font-size: 1.5rem;
     line-height: 2rem;
 }
+
 /* endregion */
 
 /* region Message */
@@ -1950,6 +1955,125 @@ form.message-search button {
         display: none;
     }
 }
+
+/* endregion */
+
+/* region Modal  */
+.modal {
+    font-size: 1rem;
+    color: #ABB0AF;
+    --bs-modal-width: 650px;
+}
+
+.modal .btn-close {
+    border: 1px solid;
+    border-radius: 50%;
+    color: #ABB0AF;
+    font-size: .5rem;
+}
+
+.modal .modal-content {
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.modal .modal-header {
+    border-radius: 2rem 2rem 0 0;
+    border: none;
+}
+
+.modal .modal-footer {
+    border: none;
+    justify-content: center;
+}
+
+.modal .modal-footer .btn-as {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.modal h3 {
+    font-size: 1.25rem;
+    color: #001F1C;
+}
+
+.modal .modal-title {
+    text-align: center;
+    width: 100%;
+}
+
+#commentModal .modal-footer form {
+    width: 100%;
+}
+
+#commentModal .modal-footer form textarea {
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+    padding: 1rem;
+}
+
+#commentModal .modal-content {
+    text-align: left;
+    color: #5B5B5B;
+}
+
+.comment-item {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.comment-item .image {
+    height: 40px;
+}
+
+.comment-item .title {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.comment-item .title span {
+    font-size: .75rem;
+}
+
+.comment-item p {
+    margin-bottom: .25rem;
+}
+
+.comment-item .comment-menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.comment-item .comment-menu li {
+    border-right: 1px solid #878787;
+    padding-right: .5rem;
+    margin-right: .5rem;
+    line-height: 1rem;
+    font-size: .75rem;
+}
+
+.comment-item .comment-menu li a {
+    color: #5B5B5B;
+}
+
+.comment-item .comment-menu li:last-child {
+    border: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.comment-item .btn-favorite {
+    position: absolute;
+    right: 0;
+}
+
+.response-wrapper {
+    padding-left: 3rem;
+}
+
 
 /* endregion */
 

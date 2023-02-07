@@ -174,8 +174,8 @@
                         <!-- endregion -->
                         <!-- region Method Item -->
                         <div class="form-check payment-check">
-                            <input class="form-check-input" type="radio" name="paymentMethodRadio" id="paymentMethodRadio3">
-                            <label class="form-check-label" for="paymentMethodRadio3">
+                            <input class="form-check-input" type="radio" name="paymentMethodRadio" id="paymentMethodRadio4">
+                            <label class="form-check-label" for="paymentMethodRadio4">
                                 <div class="payment-card">
                                     <h3>GarantiPay</h3>
                                 </div>
@@ -223,9 +223,7 @@
                         </form>
                     </div>
                     <!-- endregion -->
-
                 </div>
-
             </div>
             <div class="col-12 col-md-3">
                 <div class="basket-wrapper">
@@ -294,12 +292,32 @@
 
                     </div>
                     <!-- endregion -->
-                    <button class="btn btn-as">Sipariş Ver</button>
+                    <button class="btn btn-as" data-bs-toggle="modal" data-bs-target="#responseModal">Sipariş Ver</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- endregion -->
+
+<!-- region Modal -->
+<div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/info.png" alt="Başlık">
+                <h3>Ödeme Başarılı</h3>
+                <p>Siparişiniz onaylanmıştır.  Siparişlerinizi <strong>Aldıklarım</strong> <br> bölümünden kontrol edebilirsiniz.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-as">Tamamla</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- endregion -->
 
 <!-- region Footer -->
