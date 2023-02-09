@@ -86,7 +86,7 @@
 <section class="blog">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-lg-10">
                 <div class="blog-content">
                     <!-- region Breadcrumb -->
                     <div class="row">
@@ -130,30 +130,39 @@
                             sahip olduğunuzu ve çeşitli korkularınızın olduğunu tahmin edebiliyoruz. Kucağınız da küçücük bebeğiniz ve siz emzirme ile ilgili hiçbir şey bilmiyorsunuz. </p>
                     </div>
 
-                    <style>
-                        .blog-content .actions {
-                            position: absolute;
-                            bottom: 1rem;
-                            right: 1rem;
-                        }
-
-                        .blog-content .actions .btn-comment {
-                            border: none;
-                        }
-                    </style>
                     <div class="actions">
-                        <button class="btn btn-actions">
-
+                        <div class="btn-actions" onclick="funcShowActions()">
+                            <ul>
+                                <li>
+                                    <img src="images/icon/action-logo-1.png" class="actions-process-item" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/icon/action-logo-2.png" class="actions-process-item" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/icon/action-logo-3.png" class="actions-process-item" alt="">
+                                </li>
+                            </ul>
                             49
-                        </button>
+                        </div>
                         <button class="btn btn-comment" data-bs-toggle="modal" data-bs-target="#commentModal">
                             <img src="images/icon/comment.svg" alt="Başlık"> 49
                         </button>
                     </div>
 
+                    <div class="actions-process">
+                        <ul>
+                            <li><a href="#"><img src="images/icon/action-logo-1.png" class="actions-process-item" alt="İşlem Adı"></a></li>
+                            <li><a href="#"><img src="images/icon/action-logo-2.png" class="actions-process-item" alt="İşlem Adı"></a></li>
+                            <li><a href="#"><img src="images/icon/action-logo-3.png" class="actions-process-item" alt="İşlem Adı"></a></li>
+                            <li><a href="#"><img src="images/icon/action-logo-4.png" class="actions-process-item" alt="İşlem Adı"></a></li>
+                            <li><a href="#"><img src="images/icon/action-logo-5.png" class="actions-process-item" alt="İşlem Adı"></a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-lg-2">
                 <!-- region Blog User -->
                 <div class="blog-user">
                     <img src="images/avatar-50.png" alt="Başlık">
@@ -213,6 +222,153 @@
         </div>
     </div>
 </section>
+<!-- endregion -->
+
+<!-- region Mobile Main Navbar -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMainNavbar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menü</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form action="#">
+            <input type="text" name="mobile-navbar-search" id="mobile-navbar-search" placeholder="Ara...">
+        </form>
+        <ul class="main-navbar">
+            <li><a href="#">Anne</a></li>
+            <li><a href="#">El Emeği</a></li>
+            <li><a href="#">Elekronik</a></li>
+            <li><a href="#">Bebek & Çocuk</a></li>
+            <li><a href="#">Kadın</a></li>
+            <li><a href="#">Ev & Yaşam</a></li>
+            <li><a href="#">Organik</a></li>
+        </ul>
+    </div>
+</div>
+<!-- endregion -->
+
+<!-- region Mobile Basket -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBasket">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Sepetim</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="basket-wrapper">
+            <!-- region Basket Item -->
+            <div class="basket-item">
+                <div class="seller">
+                    <img src="images/avatar-40.png" alt="Başlık">
+                    <div class="seller-info">
+                        <span>Satıcı</span>
+                        Songül Demir
+                    </div>
+                    <div class="shipping">
+                        Kargo: ₺30
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product.png" class="image" alt="Ürün Adı">
+                    <div class="product-detail">
+                        <a href="#" class="btn btn-category">Bebek & Çocuk</a>
+                        <h3 class="title">Bebek Hırka</h3>
+                        <div class="price">₺500</div>
+                        <div class="discount">₺48.99</div>
+                    </div>
+                    <button class="btn btn-remove"><i class="fa fa-trash-can"></i></button>
+                </div>
+            </div>
+            <!-- endregion -->
+            <!-- region Basket Item -->
+            <div class="basket-item">
+                <div class="seller">
+                    <img src="images/avatar-40.png" alt="Başlık">
+                    <div class="seller-info">
+                        <span>Satıcı</span>
+                        Songül Demir
+                    </div>
+                    <div class="shipping">
+                        Kargo: ₺30
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product.png" class="image" alt="Ürün Adı">
+                    <div class="product-detail">
+                        <a href="#" class="btn btn-category">Bebek & Çocuk</a>
+                        <h3 class="title">Bebek Hırka</h3>
+                        <div class="price">₺500</div>
+                        <div class="discount">₺48.99</div>
+                    </div>
+                    <button class="btn btn-remove"><i class="fa fa-trash-can"></i></button>
+                </div>
+            </div>
+            <!-- endregion -->
+            <!-- region Basket Summary -->
+            <div class="basket-summary">
+                <div class="basket-summary-item">
+                    Ürünlerin Toplamı <span>₺700</span>
+                </div>
+
+                <div class="basket-summary-item">
+                    Kargo Toplamı <span>₺60</span>
+                </div>
+
+                <div class="basket-summary-item total">
+                    Toplam <span>₺760</span>
+                </div>
+
+            </div>
+            <!-- endregion -->
+            <button class="btn btn-as">Sipariş Ver</button>
+        </div>
+    </div>
+</div>
+<!-- endregion -->
+
+<!-- region Mobile Account Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAccountMenu" aria-labelledby="offcanvasAccountMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Hesabım</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="account-menu">
+            <li><a href="#"><img src="images/icon/account/wallet.svg" alt="Cüzdanım"> Cüzdanım</a></li>
+            <li class="active"><a href="#"><img src="images/icon/account/message.svg" alt="Mesajlar"> Mesajlar</a></li>
+            <li><a href="#"><img src="images/icon/account/product.svg" alt="Ürünlerim"> Ürünlerim</a></li>
+            <li><a href="#"><img src="images/icon/account/buying.svg" alt="Aldıklarım"> Aldıklarım</a></li>
+            <li><a href="#"><img src="images/icon/account/selling.svg" alt="Sattıklarım"> Sattıklarım</a></li>
+            <li><a href="#"><img src="images/icon/account/offer.svg" alt="Tekliflerim"> Tekliflerim</a></li>
+            <li><a href="#"><img src="images/icon/account/question.svg" alt="Soru / Cevap"> Soru / Cevap</a></li>
+            <li><a href="#"><img src="images/icon/account/favorite.svg" alt="Favorilerim"> Favorilerim</a></li>
+            <li><a href="#"><img src="images/icon/account/user.svg" alt="Hesap Bilgilerim"> Hesap Bilgilerim</a></li>
+            <li><a href="#"><img src="images/icon/account/location.svg" alt="Adres Bilgilerim"> Adres Bilgilerim</a></li>
+            <li><a href="#"><img src="images/icon/account/notification.svg" alt="Bildirim Ayarlarım"> Bildirim Ayarlarım</a></li>
+            <li><a href="#"><img src="images/icon/account/shopping.svg" alt="Mağaza Ol"> Mağaza Ol</a></li>
+            <li><a href="#"><img src="images/icon/account/support.svg" alt="Yardım & Destek"> Yardım & Destek</a></li>
+        </ul>
+    </div>
+</div>
+<!-- endregion -->
+
+<!-- region Mobile Navbar -->
+<div id="mobile-navbar">
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMainNavbar" aria-controls="offcanvasMainNavbar">
+        <i class="fa fa-bars"></i>
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBasket" aria-controls="offcanvasBasket">
+        <img src="images/icon/basket.svg" alt="Başlık">
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMainNavbar" aria-controls="offcanvasMainNavbar">
+        <img src="images/icon/logout.svg" alt="Başlık">
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMainNavbar" aria-controls="offcanvasMainNavbar">
+        <img src="images/icon/bell.svg" alt="Başlık">
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccountMenu" aria-controls="offcanvasAccountMenu">
+        <img src="images/avatar-50.png" alt="Başlık"></a>
+    </button>
+</div>
 <!-- endregion -->
 
 <!-- region Modal -->
@@ -308,7 +464,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 order-md-first order-lg-first col-xl-4">
                 <a href="#" class="footer-logo">
                     <img src="images/anneler-satiyor.svg" alt="Anneler Satıyor">
                 </a>
@@ -337,7 +493,7 @@
                 </ul>
 
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 order-md-3 col-xl-2">
                 <h3 class="footer-menu-title">Müşteri Hizmetleri</h3>
                 <ul class="footer-menu">
                     <li><a href="#">Üyelik Sözleşmesi</a></li>
@@ -353,7 +509,7 @@
                     <li><a href="#">Web Sitesi Kullanım Sözleşmesi</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 order-md-4 col-xl-2">
                 <h3 class="footer-menu-title">Anneler Satıyor</h3>
                 <ul class="footer-menu">
                     <li><a href="#">Hakkımızda</a></li>
@@ -365,7 +521,7 @@
                     <li><a href="#">S.S.S.</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 order-md-2 order-lg-last col-xl-4">
                 <div class="footer-contact-wrapper">
                     <img src="images/footer/footer-contact.png" alt="İletişime Geçin">
                     <h3>Aklınıza takılan bir <br> soru mu var?</h3>
@@ -399,7 +555,6 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </footer>
@@ -416,15 +571,19 @@
 
 <!-- region Page JS -->
 <script type="text/javascript">
-    var articleSwipper = new Swiper(".article-swipper", {
-        slidesPerView: 4,
-        spaceBetween: 40,
-        centeredSlides: true,
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+    function funcShowActions() {
+        let wrapper = $(".actions").position();
+        let left = wrapper.left - 10;
+        let top = wrapper.top - 65;
+
+        $(".actions-process").css({"display": "inline-block", "position": "absolute", "top": top, "left": left});
+    }
+
+    $("body").on("click", function (e) {
+        console.log(e.target.className);
+        if ((e.target.className !== "actions-process") && (e.target.className !== "actions-process-item")) {
+            $(".actions-process").css({"display": "none"});
+        }
     });
 </script>
 <!-- endregion -->

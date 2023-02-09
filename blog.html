@@ -86,7 +86,7 @@
 <section class="blog">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-7">
                 <!-- region Blog Item -->
                 <a href="#">
                     <div class="card-article blog-item large">
@@ -112,7 +112,7 @@
                 </a>
                 <!-- endregion -->
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3">
                 <!-- region Blog Item -->
                 <a href="#">
                     <div class="card-article blog-item">
@@ -167,7 +167,7 @@
                 </a>
                 <!-- endregion -->
             </div>
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-lg-2">
                 <!-- region Blog User -->
                 <div class="blog-user">
                     <img src="images/avatar-50.png" alt="Başlık">
@@ -268,11 +268,158 @@
 </section>
 <!-- endregion -->
 
+<!-- region Mobile Main Navbar -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMainNavbar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menü</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form action="#">
+            <input type="text" name="mobile-navbar-search" id="mobile-navbar-search" placeholder="Ara...">
+        </form>
+        <ul class="main-navbar">
+            <li><a href="#">Anne</a></li>
+            <li><a href="#">El Emeği</a></li>
+            <li><a href="#">Elekronik</a></li>
+            <li><a href="#">Bebek & Çocuk</a></li>
+            <li><a href="#">Kadın</a></li>
+            <li><a href="#">Ev & Yaşam</a></li>
+            <li><a href="#">Organik</a></li>
+        </ul>
+    </div>
+</div>
+<!-- endregion -->
+
+<!-- region Mobile Basket -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBasket">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Sepetim</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="basket-wrapper">
+            <!-- region Basket Item -->
+            <div class="basket-item">
+                <div class="seller">
+                    <img src="images/avatar-40.png" alt="Başlık">
+                    <div class="seller-info">
+                        <span>Satıcı</span>
+                        Songül Demir
+                    </div>
+                    <div class="shipping">
+                        Kargo: ₺30
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product.png" class="image" alt="Ürün Adı">
+                    <div class="product-detail">
+                        <a href="#" class="btn btn-category">Bebek & Çocuk</a>
+                        <h3 class="title">Bebek Hırka</h3>
+                        <div class="price">₺500</div>
+                        <div class="discount">₺48.99</div>
+                    </div>
+                    <button class="btn btn-remove"><i class="fa fa-trash-can"></i></button>
+                </div>
+            </div>
+            <!-- endregion -->
+            <!-- region Basket Item -->
+            <div class="basket-item">
+                <div class="seller">
+                    <img src="images/avatar-40.png" alt="Başlık">
+                    <div class="seller-info">
+                        <span>Satıcı</span>
+                        Songül Demir
+                    </div>
+                    <div class="shipping">
+                        Kargo: ₺30
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product.png" class="image" alt="Ürün Adı">
+                    <div class="product-detail">
+                        <a href="#" class="btn btn-category">Bebek & Çocuk</a>
+                        <h3 class="title">Bebek Hırka</h3>
+                        <div class="price">₺500</div>
+                        <div class="discount">₺48.99</div>
+                    </div>
+                    <button class="btn btn-remove"><i class="fa fa-trash-can"></i></button>
+                </div>
+            </div>
+            <!-- endregion -->
+            <!-- region Basket Summary -->
+            <div class="basket-summary">
+                <div class="basket-summary-item">
+                    Ürünlerin Toplamı <span>₺700</span>
+                </div>
+
+                <div class="basket-summary-item">
+                    Kargo Toplamı <span>₺60</span>
+                </div>
+
+                <div class="basket-summary-item total">
+                    Toplam <span>₺760</span>
+                </div>
+
+            </div>
+            <!-- endregion -->
+            <button class="btn btn-as">Sipariş Ver</button>
+        </div>
+    </div>
+</div>
+<!-- endregion -->
+
+<!-- region Mobile Account Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAccountMenu" aria-labelledby="offcanvasAccountMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Hesabım</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="account-menu">
+            <li><a href="#"><img src="images/icon/account/wallet.svg" alt="Cüzdanım"> Cüzdanım</a></li>
+            <li class="active"><a href="#"><img src="images/icon/account/message.svg" alt="Mesajlar"> Mesajlar</a></li>
+            <li><a href="#"><img src="images/icon/account/product.svg" alt="Ürünlerim"> Ürünlerim</a></li>
+            <li><a href="#"><img src="images/icon/account/buying.svg" alt="Aldıklarım"> Aldıklarım</a></li>
+            <li><a href="#"><img src="images/icon/account/selling.svg" alt="Sattıklarım"> Sattıklarım</a></li>
+            <li><a href="#"><img src="images/icon/account/offer.svg" alt="Tekliflerim"> Tekliflerim</a></li>
+            <li><a href="#"><img src="images/icon/account/question.svg" alt="Soru / Cevap"> Soru / Cevap</a></li>
+            <li><a href="#"><img src="images/icon/account/favorite.svg" alt="Favorilerim"> Favorilerim</a></li>
+            <li><a href="#"><img src="images/icon/account/user.svg" alt="Hesap Bilgilerim"> Hesap Bilgilerim</a></li>
+            <li><a href="#"><img src="images/icon/account/location.svg" alt="Adres Bilgilerim"> Adres Bilgilerim</a></li>
+            <li><a href="#"><img src="images/icon/account/notification.svg" alt="Bildirim Ayarlarım"> Bildirim Ayarlarım</a></li>
+            <li><a href="#"><img src="images/icon/account/shopping.svg" alt="Mağaza Ol"> Mağaza Ol</a></li>
+            <li><a href="#"><img src="images/icon/account/support.svg" alt="Yardım & Destek"> Yardım & Destek</a></li>
+        </ul>
+    </div>
+</div>
+<!-- endregion -->
+
+<!-- region Mobile Navbar -->
+<div id="mobile-navbar">
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMainNavbar" aria-controls="offcanvasMainNavbar">
+        <i class="fa fa-bars"></i>
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBasket" aria-controls="offcanvasBasket">
+        <img src="images/icon/basket.svg" alt="Başlık">
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMainNavbar" aria-controls="offcanvasMainNavbar">
+        <img src="images/icon/logout.svg" alt="Başlık">
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMainNavbar" aria-controls="offcanvasMainNavbar">
+        <img src="images/icon/bell.svg" alt="Başlık">
+    </button>
+    <button class="btn btn-mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccountMenu" aria-controls="offcanvasAccountMenu">
+        <img src="images/avatar-50.png" alt="Başlık"></a>
+    </button>
+</div>
+<!-- endregion -->
+
 <!-- region Footer -->
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 order-md-first order-lg-first col-xl-4">
                 <a href="#" class="footer-logo">
                     <img src="images/anneler-satiyor.svg" alt="Anneler Satıyor">
                 </a>
@@ -301,7 +448,7 @@
                 </ul>
 
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 order-md-3 col-xl-2">
                 <h3 class="footer-menu-title">Müşteri Hizmetleri</h3>
                 <ul class="footer-menu">
                     <li><a href="#">Üyelik Sözleşmesi</a></li>
@@ -317,7 +464,7 @@
                     <li><a href="#">Web Sitesi Kullanım Sözleşmesi</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 order-md-4 col-xl-2">
                 <h3 class="footer-menu-title">Anneler Satıyor</h3>
                 <ul class="footer-menu">
                     <li><a href="#">Hakkımızda</a></li>
@@ -329,7 +476,7 @@
                     <li><a href="#">S.S.S.</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 order-md-2 order-lg-last col-xl-4">
                 <div class="footer-contact-wrapper">
                     <img src="images/footer/footer-contact.png" alt="İletişime Geçin">
                     <h3>Aklınıza takılan bir <br> soru mu var?</h3>
@@ -363,7 +510,6 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </footer>

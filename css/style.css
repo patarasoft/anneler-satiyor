@@ -216,6 +216,7 @@ hr {
     padding: 1rem;
     display: flex;
     margin-bottom: 1.5rem;
+    position: relative;
 }
 
 .card-product .image {
@@ -227,9 +228,30 @@ hr {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-around;
     align-items: start;
     margin-top: 1rem;
+}
+
+.card-product .body .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    color: var(--main-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.card-product .btn-as {
+    flex: 1;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+}
+
+.card-product .price {
+    flex: 1;
 }
 
 .btn-category {
@@ -252,13 +274,13 @@ hr {
     border: none;
 }
 
-.card-product .body .btn-favorite {
+.card-product .btn-favorite {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: .5rem;
+    top: .5rem;
 }
 
-.card-product .body .btn-favorite.active {
+.card-product .btn-favorite.active {
     color: #FF1B88;
 }
 
@@ -287,13 +309,6 @@ hr {
     font-size: .75rem;
     color: #A1A3AD;
     font-weight: 500;
-}
-
-.card-product .btn-as {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 2rem;
-    padding: 1rem;
 }
 
 .product-category-list {
@@ -587,6 +602,52 @@ hr {
     padding: 1rem;
 }
 
+@media (max-width: 991px) {
+    #home-category-list {
+        overflow-x: auto;
+        flex-wrap: inherit;
+    }
+
+    #hero {
+        padding: 2rem 0 1rem;
+    }
+
+    .card-product {
+        flex-direction: column;
+    }
+
+    .card-product .image {
+        margin-right: 0;
+    }
+
+    .card-product .body .footer {
+        flex-direction: column;
+    }
+
+    .card-product .body .footer .price {
+        width: 100%;
+        margin-bottom: .25rem;
+        text-align: center;
+    }
+
+    .card-product .body .footer .btn-as {
+        width: 100%;
+    }
+
+    .card-category-overlay.large .btn-tag {
+        left: 2rem;
+        top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .card-category-overlay.large .title {
+        font-size: 3rem;
+        line-height: 4rem;
+        bottom: 2rem;
+        left: 2rem;
+    }
+}
+
 @media (max-width: 767px) {
     #hero {
         padding: 2rem 0 1rem;
@@ -634,7 +695,6 @@ hr {
         padding: .5rem;
     }
 }
-
 /* endregion */
 
 /* region Category Detail */
@@ -702,6 +762,13 @@ hr {
     border-radius: 1.5rem;
 }
 
+.mobile-wrapper {
+    display: none;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .category-actions .btn-as {
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -720,6 +787,7 @@ hr {
     box-shadow: 0 0 .5rem rgba(0, 0, 0, .15);
     padding: 1rem;
     margin-bottom: 1.5rem;
+    position: relative;
 }
 
 .product-card .image {
@@ -757,14 +825,34 @@ hr {
     border-radius: 1.5rem;
 }
 
+.product-card .btn-favorite {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
 @media (max-width: 767px) {
     #filter-area {
         display: none;
     }
 
+    .mobile-wrapper {
+        display: inline-block;
+    }
+
     .product-card .body .footer {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .product-card .body .footer .price {
+        margin-bottom: .25rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-card .body .footer .btn-as {
+        width: 100%;
     }
 }
 
@@ -995,6 +1083,7 @@ hr {
 
     .product-info, .product-tab {
         padding: 0;
+        margin-top: 2rem;
     }
 
     .product-info .price {
@@ -1378,6 +1467,92 @@ section.blog {
     line-height: 2rem;
 }
 
+.blog-content .actions {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.btn-actions {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.btn-actions ul {
+    display: flex;
+    float: left;
+    margin-right: 1rem;
+}
+
+.btn-actions ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -.75rem;
+}
+
+.btn-actions ul li img {
+    height: 3rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: .5rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+}
+
+.blog-content .actions .btn-comment {
+    border: none;
+    float: right;
+    padding: .5rem 1rem;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.actions-process {
+    background-color: #ffffff;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+    display: inline-block;
+    padding: .75rem 1rem;
+    border-radius: 2rem;
+    display: none;
+}
+
+.actions-process ul {
+    display: flex;
+}
+
+.actions-process ul li {
+    margin-right: 1rem;
+}
+
+.actions-process ul li:last-child {
+    margin-right: 0;
+}
+
+.actions-process ul li a {
+}
+
+.actions-process ul li a img {
+    height: 2rem;
+}
+
+@media (max-width: 991px) {
+    .blog-content {
+        margin: 1.5rem 0;
+    }
+
+    .blog-content h3.title {
+        font-size: 1.5rem;
+    }
+
+    .blog-content .text {
+        font-size: 1rem;
+    }
+}
 /* endregion */
 
 /* region Message */
@@ -2074,6 +2249,19 @@ form.message-search button {
     padding-left: 3rem;
 }
 
+@media (max-width: 991px) {
+    #commentModal .btn-close {
+        margin-right: .5rem;
+    }
+
+    #commentModal .modal-content {
+        padding: 0;
+    }
+
+    #commentModal .comment-item .title {
+        margin-bottom: 1rem;
+    }
+}
 
 /* endregion */
 
@@ -2139,7 +2327,7 @@ form.message-search button {
     padding: 0.5rem 1rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .main-navbar-wrapper {
         display: none;
     }
@@ -2281,7 +2469,7 @@ header hr {
     background-color: #ffffff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header-top span {
         display: none;
     }
@@ -2435,6 +2623,13 @@ footer {
     color: #292D32;
 }
 
+@media (max-width: 991px) {
+    .footer-bottom {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+}
+
 @media (max-width: 567px) {
     footer {
         text-align: center;
@@ -2460,6 +2655,7 @@ footer {
 
     .footer-bottom {
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     div:has(> ul.footer-bottom-list) {
@@ -2472,5 +2668,4 @@ footer {
     }
 
 }
-
 /* endregion */
