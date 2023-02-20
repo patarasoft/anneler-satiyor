@@ -107,6 +107,17 @@
                     GİYİM
                 </h3>
                 <ul class="list-style-navbar">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-order dropdown-toggle" id="dropdownOrder" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-sort"></i> Sırala
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-order">
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="showOrder(this)"><i class="fa fa-arrow-down-1-9"></i> Fiyata Göre Artan</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="showOrder(this)"><i class="fa fa-arrow-up-9-1"></i> Fiyata Göre Azalan</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="showOrder(this)"><i class="fa fa-arrow-down-a-z"></i> Adı Göre (A->Z)</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="showOrder(this)"><i class="fa fa-arrow-up-a-z"></i> Adı Göre (Z->A)</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#" class="active"><i class="fa fa-table"></i> Tablo</a></li>
                     <li><a href="#"><i class="fa fa-list"></i> Listele</a></li>
                     <li><span class="span-as">117</span> Ürün</li>
@@ -1156,7 +1167,9 @@
 
 <!-- region Page JS -->
 <script type="text/javascript">
-
+    function showOrder(item) {
+        document.getElementById("dropdownOrder").innerHTML = item.innerHTML;
+    }
 </script>
 <!-- endregion -->
 

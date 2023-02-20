@@ -106,7 +106,7 @@ hr {
     color: #A9A9A9;
 }
 
-.list-style-navbar li {
+.list-style-navbar > li {
     margin-left: 1rem;
 }
 
@@ -124,6 +124,16 @@ hr {
 
 .list-style-navbar li a.active i {
     color: var(--main-color);
+}
+
+.btn-order {
+    border: none;
+    font-size: .75rem;
+    color: #A9A9A9;
+}
+
+.dropdown-menu-order {
+
 }
 
 .span-as {
@@ -1331,6 +1341,21 @@ section.blog {
     background-color: #F1F4F6;
 }
 
+.blog-search {
+    width: 100%;
+    background-color: rgba(91, 91, 91, 0.1);
+    color: #151515;
+    padding: .75rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.blog-search:focus, .blog-search:hover {
+    outline: none;
+    border: none;
+}
+
 .blog-user {
     background-color: #ffffff;
     padding: 1rem;
@@ -1541,6 +1566,10 @@ section.blog {
 }
 
 @media (max-width: 991px) {
+    .blog-search {
+        margin: 1rem 0;
+    }
+
     .blog-content {
         margin: 1.5rem 0;
     }
